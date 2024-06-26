@@ -1,0 +1,116 @@
+:root {
+--font-family: "Montserrat", sans-serif;
+--second-family: "Poppins", sans-serif;
+--third-family: "Roboto", sans-serif;
+--main--header-color:#252B42;
+--main--p--color:#F6F6F6;
+}
+.container {
+  width: 1135px;
+  padding: 0 15px;
+  outline: 2px dashed blueviolet;
+  margin:0 auto;
+}
+/* header */
+.header {
+  margin-bottom: 54px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+  gap: 104px;
+  color: #252B42;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.01em;
+}
+/* hero section */
+.hero-section {
+  margin-bottom: 56px;
+  padding-top: 79px;
+  padding-bottom: 162px;
+  background-image: url(../img/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-h2-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f6f6f6
+}
+h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 138%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.hero-paragraph {
+  margin-bottom: 54px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #f6f6f6;
+}
+.btn-header-wrapper {
+  margin-bottom: 162px;
+  display: flex;
+  justify-content: center;
+  gap: 67px;
+}
+.first-hero-button {
+  padding: 16px 65px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color:#fff;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.second-hero-btn {
+  padding: 16px 82px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color:#fff;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+/* app works section */
+.app-works-section {
+  margin-bottom: ;
+}
+.app-section-title {
+  font-family: var(--second-family);
+  text-align: center;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 82%;
+  letter-spacing: 0em;
+  color: #000;
+}
