@@ -35,6 +35,29 @@
 .header-list .header-list-element:hover{
   color: #FA4A0C;
 }
+.header-list-element {
+  position: relative; /* Добавлено позиционирование */
+}
+
+.header-list-element::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FA4A0C;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -5px; /* Подчеркнем на 5px ниже */
+  left: 0;
+  opacity: 0; /* Изначально скрыто */
+  transform: scale(0); /* Изначально скрыто */
+  transition: transform 500ms ease, opacity 500ms ease; /* Анимация перехода */
+}
+
+.header-list-element:hover::after {
+  opacity: 1; /* Показываем подчеркивание при ховере */
+  transform: scale(1); /* Увеличиваем до полной ширины */
+}
 /* hero section */
 .hero-section {
   margin-bottom: 56px;
@@ -108,11 +131,13 @@ h1 {
   background-color: #FA4A0C;
   border: none;
   box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
+  border: 1px solid #FA4A0C;
 }
 .second-hero-btn:hover {
   background-color: #FA4A0C;
   border: none;
   box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2); 
+  border: 1px solid #FA4A0C;
 }
 /* app works section */
 .app-works-section {
@@ -227,10 +252,12 @@ h1 {
 .first-button:hover {
   background-color: #FA4A0C;
   border: none;
+  border: 1px solid #FA4A0C;
 }
 .second-button:hover {
   background-color: #FA4A0C;
   border: none;
+  border: 1px solid #FA4A0C;
 }
 .footer-list {
   display: flex;
