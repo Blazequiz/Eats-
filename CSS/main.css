@@ -50,6 +50,36 @@ figure {
   margin: 0;
 }
 
+.section-order-h2, .hero-section-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+
+.btn, .btn-transparent {
+  padding: 16px 82px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.btn-transparent {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.btn-transparent:hover {
+  background-color: #FA4A0C;
+  border: none;
+  box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
+  border: 1px solid #FA4A0C;
+}
+
 .container {
   width: 1135px;
   padding: 0 15px;
@@ -114,19 +144,15 @@ h1 {
 }
 
 .hero-section {
+  padding-top: 80px;
+  padding-bottom: 160px;
   margin-bottom: 56px;
-  padding-top: 79px;
-  padding-bottom: 162px;
   background-image: linear-gradient(rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(../img/hero-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hero-section-title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  letter-spacing: 0em;
   text-align: center;
   color: #f6f6f6;
 }
@@ -178,12 +204,6 @@ h1 {
   border: none;
   background-color: transparent;
   border: 1px solid #fff;
-}
-.hero-wrapper-second-button:hover {
-  background-color: #FA4A0C;
-  border: none;
-  box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
-  border: 1px solid #FA4A0C;
 }
 
 /* app works section */
@@ -238,9 +258,9 @@ h1 {
 }
 
 .section-order {
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-bottom: 78px;
-  padding-top: 141px;
-  padding-bottom: 141px;
   background-image: linear-gradient(rgba(23, 16, 16, 0.4), rgba(23, 16, 16, 0.4)), url(../img/footer-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,10 +274,6 @@ h1 {
 .section-order-h2 {
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 142%;
-  letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
 }

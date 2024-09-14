@@ -1,16 +1,18 @@
 .hero-section {
+  @include paddings(80px , 160px);
     margin-bottom: 56px;
-    padding-top: 79px;
-    padding-bottom: 162px;
+    // padding-top: 80px;
+    // padding-bottom: 160px;
     background-image: linear-gradient(rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)),url(../img/hero-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     &-title {
+      @extend %text-subtitle;
       font-family: $font-family;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 150%;
-      letter-spacing: 0em;
+      // font-weight: 700;
+      // font-size: 24px;
+      // line-height: 150%;
+      // letter-spacing: 0em;
       text-align: center;
       color: #f6f6f6
     }
@@ -62,11 +64,11 @@
       border: none;
       background-color: transparent;
       border: 1px solid #fff;
-      &:hover {
-        background-color: #FA4A0C;
-        border: none;
-        box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
-        border: 1px solid #FA4A0C;
-      }
+      // &:hover {
+      //   background-color: #FA4A0C;
+      //   border: none;
+      //   box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
+      //   border: 1px solid #FA4A0C;
+      // }
     }  
   }
