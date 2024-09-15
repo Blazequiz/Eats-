@@ -1,8 +1,6 @@
 .footer {
   &-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-items;  
   }
   &-paragraph {
     font-family: $third-family;

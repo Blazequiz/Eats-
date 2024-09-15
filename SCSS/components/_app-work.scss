@@ -2,15 +2,17 @@
   .about-section {
     margin-bottom: 184px;
     &-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend %flex-items;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
       margin-bottom: 108px;
   }
   &-second-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend %flex-items;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
       flex-direction: row-reverse;   
   }
   &-paragraph {

@@ -57,6 +57,12 @@ figure {
   letter-spacing: 0em;
 }
 
+.footer-list, .about-section-second-list, .about-section-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .btn, .btn-transparent {
   padding: 16px 82px;
   font-family: "Montserrat", sans-serif;
@@ -168,10 +174,10 @@ h1 {
 }
 
 .hero-wrapper {
-  margin-bottom: 162px;
-  display: flex;
-  justify-content: center;
   gap: 67px;
+  display: flex;
+  margin-bottom: 162px;
+  justify-content: center;
 }
 .hero-wrapper-first-button {
   padding: 16px 65px;
@@ -211,15 +217,9 @@ h1 {
   margin-bottom: 184px;
 }
 .about-section-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 108px;
 }
 .about-section-second-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: row-reverse;
 }
 .about-section-paragraph {
@@ -325,11 +325,6 @@ h1 {
   border: 1px solid #FA4A0C;
 }
 
-.footer-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .footer-paragraph {
   font-family: "Roboto", sans-serif;
   font-weight: 700;

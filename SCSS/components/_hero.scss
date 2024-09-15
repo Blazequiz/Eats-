@@ -14,7 +14,7 @@
       // line-height: 150%;
       // letter-spacing: 0em;
       text-align: center;
-      color: #f6f6f6
+      color: #f6f6f6 
     }
     &-paragraph {
       margin-bottom: 54px;
@@ -29,10 +29,11 @@
   }
 
 .hero-wrapper {
+    @include flexible(67px);
     margin-bottom: 162px;
-    display: flex;
+    // display: flex;
     justify-content: center;
-    gap: 67px;
+    // gap: 67px;
     &-first-button {
       padding: 16px 65px;
       font-family: $font-family;

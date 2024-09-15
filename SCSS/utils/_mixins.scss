@@ -2,3 +2,7 @@
   padding-top: $top;
   padding-bottom: $bottom;
 }
+@mixin flexible ($gap) {
+  gap: $gap;
+  display: flex;
+}
