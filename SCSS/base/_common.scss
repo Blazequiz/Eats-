@@ -1,8 +1,13 @@
 .container {
-  width: 1135px;
+  max-width: 1135px;
   padding: 0 15px;
   /* outline: 2px dashed blueviolet; */
   margin:0 auto;
+}
+section {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 h1 {
   font-family: $second-family;

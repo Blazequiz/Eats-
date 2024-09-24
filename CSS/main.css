@@ -87,10 +87,16 @@ figure {
 }
 
 .container {
-  width: 1135px;
+  max-width: 1135px;
   padding: 0 15px;
   /* outline: 2px dashed blueviolet; */
   margin: 0 auto;
+}
+
+section {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1 {
@@ -120,10 +126,38 @@ h1 {
   line-height: 175%;
   letter-spacing: 0.01em;
 }
+@media (max-width: 767px) {
+  .header-nav-list {
+    display: none;
+  }
+}
 .header-logo {
   margin-right: auto;
 }
+@media (max-width: 767px) {
+  .header-logo img {
+    width: 100px;
+  }
+}
 
+@media (min-width: 767px) {
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-nav-list {
+    gap: 50px;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .header-list {
+    gap: 94px;
+    font-size: 16px;
+  }
+}
 .header-element {
   position: relative;
 }
