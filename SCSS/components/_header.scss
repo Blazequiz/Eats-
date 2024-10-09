@@ -21,7 +21,7 @@
   }
   &-logo {
     margin-right: auto;
-    @media (max-width: 767px) { 
+    @media (min-width: 320px) { 
        img {
         width: 100px;
       }    

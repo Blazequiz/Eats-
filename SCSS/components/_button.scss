@@ -1,9 +1,9 @@
 .btn {
-  padding: 16px 82px;
+  padding: 10px 45px;
   font-family: $font-family;
   font-weight: 700;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0em;
   color:#fff;
@@ -19,5 +19,9 @@
       box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
       border: 1px solid #FA4A0C;
     }
+  }
+  @media screen and  (min-width:480px) {
+    padding: 12px 60px;    
+    font-size: 24px;
   }
 }

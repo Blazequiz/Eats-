@@ -64,11 +64,11 @@ figure {
 }
 
 .btn, .btn-transparent {
-  padding: 16px 82px;
+  padding: 10px 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0em;
   color: #fff;
@@ -85,12 +85,33 @@ figure {
   box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
   border: 1px solid #FA4A0C;
 }
+@media screen and (min-width: 480px) {
+  .btn, .btn-transparent {
+    padding: 12px 60px;
+    font-size: 24px;
+  }
+}
 
 .container {
-  max-width: 1135px;
+  min-width: 320px;
   padding: 0 15px;
-  /* outline: 2px dashed blueviolet; */
+  outline: 2px dashed blueviolet;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 section {
@@ -102,11 +123,21 @@ section {
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 58px;
+  font-size: 30px;
   line-height: 138%;
   letter-spacing: 0em;
   text-align: center;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 58px;
+  }
 }
 
 .header {
@@ -134,7 +165,7 @@ h1 {
 .header-logo {
   margin-right: auto;
 }
-@media (max-width: 767px) {
+@media (min-width: 320px) {
   .header-logo img {
     width: 100px;
   }
@@ -187,14 +218,55 @@ h1 {
   padding-top: 80px;
   padding-bottom: 160px;
   margin-bottom: 56px;
+  height: 619px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   background-image: linear-gradient(rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(../img/hero-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .hero-section {
+    padding-top: 108px;
+    padding-bottom: 128px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    width: 1440px;
+    height: 619px;
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
 }
 .hero-section-title {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #f6f6f6;
+}
+@media screen and (min-width: 480px) {
+  .hero-section-title {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-section-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-section-title {
+    font-size: 52px;
+  }
 }
 .hero-section-paragraph {
   margin-bottom: 54px;
@@ -206,15 +278,43 @@ h1 {
   text-align: center;
   color: #f6f6f6;
 }
+@media screen and (min-width: 480px) {
+  .hero-section-paragraph {
+    margin-bottom: 27px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section-paragraph {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section-paragraph {
+    margin-bottom: 54px;
+  }
+}
 
 .hero-wrapper {
-  gap: 67px;
+  gap: 20px;
   display: flex;
   margin-bottom: 162px;
   justify-content: center;
 }
+@media screen and (min-width: 480px) {
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .hero-wrapper-first-button {
-  padding: 16px 65px;
+  padding: 10px 52 px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -233,7 +333,7 @@ h1 {
   border: 1px solid #FA4A0C;
 }
 .hero-wrapper-second-button {
-  padding: 16px 82px;
+  padding: 10px 52px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -252,29 +352,91 @@ h1 {
 }
 .about-section-list {
   margin-bottom: 108px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .about-section-list .about-section-list-item img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-section-list {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-list {
+    justify-content: space-between;
+  }
 }
 .about-section-second-list {
   flex-direction: row-reverse;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .about-section-second-list .about-section-second-list-item img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-section-second-list {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-second-list {
+    justify-content: space-between;
+  }
 }
 .about-section-paragraph {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 158%;
   letter-spacing: 0.01em;
   color: #737373;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about-section-paragraph {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-paragraph {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
 }
 
 .about-section-title {
+  margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 600;
-  font-size: 44px;
+  font-size: 22px;
   line-height: 82%;
   letter-spacing: 0em;
   color: #000;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about-section-title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-title {
+    font-size: 44px;
+  }
 }
 .about-section-title-h3 {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -282,13 +444,46 @@ h1 {
   letter-spacing: 0em;
   color: #fa4a0c;
 }
+@media screen and (min-width: 768px) {
+  .about-section-title-h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-title-h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
+}
 .about-section-title-h2 {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 142%;
   letter-spacing: 0.01em;
   color: #252b42;
+}
+@media screen and (min-width: 768px) {
+  .about-section-title-h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section-title-h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+  }
 }
 
 .section-order {
@@ -298,6 +493,29 @@ h1 {
   background-image: linear-gradient(rgba(23, 16, 16, 0.4), rgba(23, 16, 16, 0.4)), url(../img/footer-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .section-order {
+    padding-top: 108px;
+    padding-bottom: 128px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-order {
+    width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-order {
+    width: 1440px;
+    height: 619px;
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
 }
 .section-order-wrapper {
   display: flex;
@@ -315,11 +533,26 @@ h1 {
   margin-bottom: 49px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 158%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
+}
+@media screen and (min-width: 480px) {
+  .section-order-paragraph {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-order-paragraph {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-order-paragraph {
+    font-size: 49px;
+  }
 }
 
 .section-order-button {
@@ -359,6 +592,11 @@ h1 {
   border: 1px solid #FA4A0C;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-list {
+    justify-content: space-evenly;
+  }
+}
 .footer-paragraph {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -367,4 +605,14 @@ h1 {
   letter-spacing: 0.01em;
   text-align: right;
   color: #5c5c5c;
+}
+@media screen and (max-width: 480px) {
+  .footer-paragraph {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-paragraph {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

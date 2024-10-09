@@ -1,11 +1,27 @@
 .hero-section {
   @include paddings(80px , 160px);
     margin-bottom: 56px;
-    // padding-top: 80px;
-    // padding-bottom: 160px;
+    height: 619px;
+    padding-top: 80px;
+    padding-bottom: 160px;     
     background-image: linear-gradient(rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)),url(../img/hero-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 320px;
+    @media screen  and (min-width:480px)  {
+      @include paddings(108px , 128px);
+      height: 100%;
+    }
+    @media screen  and (min-width:768px)  {
+      width: 768px;
+      @include paddings(118px , 118px);
+    }
+    @media screen  and (min-width:1200px)  {
+      width: 1440px;
+      height: 619px;
+      padding-top: 80px;
+      padding-bottom: 160px;       
+    }
     &-title {
       @extend %text-subtitle;
       font-family: $font-family;
@@ -14,7 +30,16 @@
       // line-height: 150%;
       // letter-spacing: 0em;
       text-align: center;
-      color: #f6f6f6 
+      color: #f6f6f6;
+      @media screen and (min-width:480px) {
+        font-size: 12px;
+      }
+      @media screen  and (min-width:480px) {
+        font-size: 28px;
+      }
+      @media screen  and (min-width:480px) {
+        font-size: 52px;
+      }
     }
     &-paragraph {
       margin-bottom: 54px;
@@ -25,17 +50,35 @@
       letter-spacing: 0.01em;
       text-align: center;
       color: #f6f6f6;
+      @media screen  and (min-width:480px) {
+        margin-bottom: 27px;
+      }
+      @media screen  and (min-width:768px) {
+        margin-bottom: 40px;
+      }
+      @media screen  and (min-width:1200px) {
+        margin-bottom: 54px;
+      }
     }
   }
 
 .hero-wrapper {
-    @include flexible(67px);
+    @include flexible(20px);
     margin-bottom: 162px;
     // display: flex;
     justify-content: center;
     // gap: 67px;
+    @media screen  and (min-width:480px) {
+      flex-direction: column;  
+      align-items: center;
+    }
+    @media screen  and (min-width:768px) {
+      flex-direction: row;  
+      align-items: center;
+      gap: 30px;
+    }
     &-first-button {
-      padding: 16px 65px;
+      padding: 10px 52  px;
       font-family: $font-family;
       font-weight: 700;
       font-size: 24px;
@@ -54,7 +97,7 @@
       }
     }   
     &-second-button {
-      padding: 16px 82px;
+      padding: 10px 52px;
       font-family: $font-family;
       font-weight: 700;
       font-size: 24px;

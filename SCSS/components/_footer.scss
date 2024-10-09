@@ -1,6 +1,9 @@
 .footer {
   &-list {
     @extend %flex-items;  
+    @media screen  and (max-width:480px) {
+      justify-content: space-evenly;
+    }
   }
   &-paragraph {
     font-family: $third-family;
@@ -10,5 +13,11 @@
     letter-spacing: 0.01em;
     text-align: right;
     color: #5c5c5c;
+    @media screen  and (max-width:480px) {
+      width: 100px;
+    }
+    @media screen  and (min-width:768px) {
+      width: 100%;
+    }
   }
 }

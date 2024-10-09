@@ -6,7 +6,21 @@
   background-image:linear-gradient(rgba(23, 16, 16, 0.4), rgba(23, 16, 16, 0.4)),url(../img/footer-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
+  @media screen  and (min-width:480px)  {
+    @include paddings(108px , 128px);
+    height: 100%;
+  }
+  @media screen  and (min-width:768px)  {
+    width: 768px;
+    @include paddings(118px , 118px);
+  }
+  @media screen  and (min-width:1200px)  {
+    width: 1440px;
+    height: 619px;
+    padding-top: 80px;
+    padding-bottom: 160px;       
+  }
  &-wrapper {
   display: flex;
   justify-content: center;
@@ -28,11 +42,20 @@
   margin-bottom: 49px;
   font-family: $font-family;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 158%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
+  @media screen  and (min-width:480px) {
+    font-size: 26px;
+  }
+  @media screen  and (min-width:768px) {
+    font-size: 32px;
+  }
+  @media screen  and (min-width:1200px) {
+    font-size: 49px;
+  }
  }
 }
 
