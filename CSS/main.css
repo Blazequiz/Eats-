@@ -615,4 +615,73 @@ h1 {
   .footer-paragraph {
     width: 100%;
   }
+}
+
+.header-menu-btn {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+.header-menu-btn:hover {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+.MenuCloseBtn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .MenuCloseBtn {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5784b;
+  transition: transform 500ms ease-in-out;
+  transform: translateX(100%);
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.link {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
