@@ -226,6 +226,11 @@ h1 {
   background-size: cover;
   min-width: 320px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../img/hero-bg@2x.jpg");
+  }
+}
 @media screen and (min-width: 480px) {
   .hero-section {
     padding-top: 108px;
@@ -494,6 +499,11 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-order {
+    background-image: url("../img/order-bg@2x.jpg");
+  }
 }
 @media screen and (min-width: 480px) {
   .section-order {

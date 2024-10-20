@@ -1,5 +1,5 @@
 .hero-section {
-  @include paddings(80px , 160px);
+    @include paddings(80px , 160px);
     margin-bottom: 56px;
     height: 619px;
     padding-top: 80px;
@@ -8,6 +8,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 320px;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../img/hero-bg@2x.jpg");
+}
     @media screen  and (min-width:480px)  {
       @include paddings(108px , 128px);
       height: 100%;
